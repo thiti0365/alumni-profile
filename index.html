@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>คำแนะนำการใช้งานระบบกองทุนฯ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://quota.jc.tu.ac.th/images/jc_logo.png" type="image/png">
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Noto Sans Thai", sans-serif;
+      }
+
+      a.icon-link:link {
+        color: #FFCC66; /* สีสำหรับลิงก์ปกติ */
+      }
+      
+      a.icon-link:visited {
+        color: #FFCC66; /* สีสำหรับลิงก์ที่เคยคลิกแล้ว */
+      }
+      
+      a.icon-link:hover {
+        color: #FF9966; /* สีเมื่อเอาเมาส์ไปวาง */
+      }
+      
+      a.icon-link:active {
+        color: #FF9900; /* สีเมื่อคลิกอยู่ */
+      }
+
+
+      /* Set up body to be a flex container and take up full viewport height */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* Navbar styling */
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: purple;
+        color: white;
+      }
+
+      .navbar img {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+      }
+
+      .navbar h1 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* Center container for the card */
+      .center-container {
+        flex: 1; /* Takes available space */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      /* Card styling */
+      .card {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        margin-bottom: 20px;
+      }
+
+      .card-header {
+        background-color: purple;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .card-body {
+        padding: 20px;
+        background-color: #f9f9f9;
+        color: #333;
+        text-align: left;
+        line-height: 1.6;
+      }
+
+      /* Styling for steps and horizontal rule */
+      .step {
+        margin: 20px 0;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 20px 0;
+      }
+
+      /* Button styling */
+      .button-link {
+        display: block;
+        background-color: purple;
+        color: white;
+        padding: 12px 0;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .button-link:hover {
+        background-color: #5e0f83;
+      }
+
+      /* Footer styling (sticky at the bottom) */
+      .footer {
+        background-color: purple;
+        color: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        width: 100%;
+        margin-top: auto; /* Push footer to the bottom */
+      }
+
+      /* Responsive font sizing for Navbar */
+      @media (max-width: 768px) {
+        .navbar h1 {
+          font-size: 20px;
+        }
+        .navbar img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img src="https://quota.jc.tu.ac.th/images/jc_logo.png" alt="Logo">
+      <h1>ระบบฐานข้อมูลศิษย์เก่า คณะวารสารศาสตร์และสื่อสารมวลชน มหาวิทยาลัยธรรมศาสตร์</h1>
+    </nav>
+
+    <!-- Center Container -->
+    <div class="center-container">
+            <div class="card">
+            <div class="card-header">
+              <h2>คำแนะนำในการใช้งานระบบฐานข้อมูลศิษย์เก่า (กรณี User ใหม่)</h2>
+            </div>
+            <div class="card-body">
+              <div class="step">
+                <h4>ขั้นตอนที่ 1:</h4>
+                &emsp;&emsp;สมัครสมาชิกเพื่อเข้าสู่ระบบฐานข้อมูลด้วย Email และตั้งค่า Password ของท่าน โดยกดปุ่ม Click here หลังคำว่า สมัครสมาชิก/New user?
+              </div>
+              <hr>
+    
+              <div class="step">
+                <h4>ขั้นตอนที่ 2:</h4>
+                &emsp;&emsp;หลังจากตั้งค่า Email และ Password ของท่านแล้ว ระบบจะกลับมายังหน้า Login อีกครั้ง และให้ท่านกรอก Email และ Password ที่ท่านได้ลงทะเบียนเอาไว้เพื่อเข้าสู่ระบบฯ
+              </div>
+              <hr>
+    
+              <div class="step">
+                <h4>ขั้นตอนที่ 3:</h4>
+                &emsp;&emsp;เมื่อ Login สำเร็จ ท่านสามารถกรอกข้อมูลตาม Form ที่กำหนดให้เพื่อเก็บข้อมูลเป็นฐานข้อมูลศิษย์เก่า คณะวารสารศาสตร์และสื่อสารมวลชน
+              </div>
+              <hr>
+    
+              <div class="step">
+                <h4>ขั้นตอนที่ 4:</h4>
+                &emsp;&emsp;เมื่อกรอกข้อมูลสำเร็จให้ท่านกดปุ่ม Submit เพื่อบันทึกข้อมูลลงระบบฐานข้อมูลฯ
+              </div>
+
+              <div class="step">
+                <h4>ขั้นตอนที่ 5:</h4>
+                &emsp;&emsp;ท่านสามารถ Logout ออกจากระบบได้ โดยการกดปุ่ม Logout ข้างปุ่ม Submit 
+              </div>
+            </div>
+
+        // <!-- Button linking to Google Apps Script at the bottom of the card -->
+        // <a id="fund-button" class="button-link" target="_blank">ดำเนินการเปลี่ยนแปลงกองทุนฯ</a> 
+      </div>
+            
+      <div class="card">
+        <div class="card-header">
+          <h2>คำแนะนำในการใช้งานระบบฐานข้อมูลศิษย์เก่า (กรณีมี User อยู่แล้ว)</h2>
+        </div>
+        <div class="card-body">
+          <div class="step">
+            <h4>ขั้นตอนที่ 1:</h4>
+            &emsp;&emsp;ท่านสามารถ Login ด้วย Email และ Password ที่ท่านเคยตั้งค่าเอาไว้
+          </div>
+          <hr>
+
+          <div class="step">
+            <h4>ขั้นตอนที่ 2:</h4>
+            &emsp;&emsp;กรณีที่ท่านลืม Password ให้กดปุ่ม Click here หลังคำว่า ลืมรหัสผ่าน/Forgotten Password? พร้อมกรอก Email ที่ท่านเคยลงทะเบียนในระบบฯ โดยระบบฯจะจัดส่ง Link สำหรับลืมรหัสผ่านให้ท่านผ่านทาง Email ที่เคยสมัครสมาชิกไว้ และให้ท่านกด link ดังกล่าว พร้อมกรอก Email ของท่านพร้อม Password ใหม่ของท่าน
+          </div>
+          <hr>
+
+          <div class="step">
+            <h4>ขั้นตอนที่ 3:</h4>
+            &emsp;&emsp;เมื่อ Login สำเร็จ ท่านสามารถปรับหรือแก้ไข อัพเดทข้อมูลตาม Form ที่กำหนดให้เพื่อเก็บข้อมูลเป็นฐานข้อมูลศิษย์เก่า คณะวารสารศาสตร์และสื่อสารมวลชน
+          </div>
+          <hr>
+
+          <div class="step">
+            <h4>ขั้นตอนที่ 4:</h4>
+            &emsp;&emsp;เมื่อกรอกข้อมูลสำเร็จให้ท่านกดปุ่ม Submit เพื่อบันทึกข้อมูลลงระบบฐานข้อมูลฯ
+          </div>
+        </div>
+
+        <!-- Button linking to Google Apps Script at the bottom of the card -->
+        <a id="fund-button" class="button-link" target="_blank">ดำเนินการเข้าสู่ระบบฐานข้อมูลศิษย์เก่า</a> 
+      </div>
+    </div>
+
+
+    <!-- Footer inside the card -->
+    <footer class="footer">
+      Copyright © 2024 Faculty of Journalism and Mass Communication, Thammasat University. All rights reserved.<br>
+        Powered by
+      <a href="https://jc.tu.ac.th/th/personnel/staff#committee_214" class="icon-link" target="_self">
+        งานเทคโนโลยีดิจิตอลและการสื่อสาร
+      </a>
+      <br><br>
+    </footer>
+
+        
+    <script>
+      // Function to detect if the user is on an iOS device
+      function isIOS() {
+        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      }
+
+      // Function to detect if the user is using Facebook's in-app browser
+      function isFacebookApp() {
+        return /FBAN|FBAV/i.test(navigator.userAgent);
+      }
+
+      // Set the link based on device and browser detection
+      function setFundButtonLink() {
+        var fundButton = document.getElementById('fund-button');
+        
+        if (isFacebookApp() && isIOS()) {
+          // If opened from Facebook's in-app browser on iOS
+          fundButton.href = 'x-safari-https://script.google.com/macros/s/AKfycbwImTdhTVyRkil43QRmBP8mw_UolKYiqze2Z2NYFB5gZAgS6iEh0fp3sYp2p5lViUE0/exec?fbclid=IwY2xjawGBW81leHRuA2FlbQIxMAABHdECaq9rixZtZgvfwaV2L9iShTggX89gCjLHIh8FitvcQ5mbhBO4I3QqMQ_aem_qaiv8lAS75Wqi8JDAy1KaA';
+        } else {
+          // For all other browsers/platforms
+          fundButton.href = 'https://script.google.com/macros/s/AKfycbwImTdhTVyRkil43QRmBP8mw_UolKYiqze2Z2NYFB5gZAgS6iEh0fp3sYp2p5lViUE0/exec?fbclid=IwY2xjawGBW81leHRuA2FlbQIxMAABHdECaq9rixZtZgvfwaV2L9iShTggX89gCjLHIh8FitvcQ5mbhBO4I3QqMQ_aem_qaiv8lAS75Wqi8JDAy1KaA';
+        }
+      }
+
+      // Run the function to set the link on page load
+      setFundButtonLink();
+    </script>
+  </body>
+</html>
