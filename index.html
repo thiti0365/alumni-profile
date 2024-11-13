@@ -36,7 +36,7 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      margin: 0;
+      margin: 0; /* Remove default body margin */
     }
     
     /* Navbar styling */
@@ -62,7 +62,7 @@
     
     /* Center container for the card */
     .center-container {
-      flex: 1;
+      flex: 1; /* Takes available space */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -126,16 +126,16 @@
     
     /* Footer styling */
     .footer {
-        background-color: purple;
-        color: #f1f1f1;
-        text-align: center;
-        padding: 10px;
-        font-size: 14px;
-        width: 100vw; /* ครอบคลุมความกว้างหน้าจอ */
-        position: relative; /* ยึด footer ให้อยู่ใต้เนื้อหา */
-        left: 0; /* ชิดขอบซ้าย */
-        bottom: 0; /* ชิดขอบล่าง */
-      }
+      background-color: purple;
+      color: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      width: 100vw; /* Full width */
+      position: relative; /* Ensures it stays at the bottom of the viewport */
+      left: 0; /* ชิดขอบซ้าย */
+      bottom: 0; /* ชิดขอบล่าง */
+    }
     
     /* Responsive font sizing for Navbar */
     @media (max-width: 768px) {
