@@ -126,16 +126,16 @@
     
     /* Footer styling */
     .footer {
-      background-color: purple;
-      color: #f1f1f1;
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-      width: 100%; /* Full width */
-      position: relative; /* Ensures it stays at the bottom of the viewport */
-      bottom: 0; /* Stick to the bottom of the screen */
-      margin-top: auto; /* Push footer to the bottom if content is less */
-    }
+        background-color: purple;
+        color: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        width: 100vw; /* ครอบคลุมความกว้างหน้าจอ */
+        position: fixed; /* ติดอยู่ที่ด้านล่างของหน้าจอ */
+        left: 0; /* ชิดขอบซ้าย */
+        bottom: 0; /* ชิดขอบล่าง */
+      }
     
     /* Responsive font sizing for Navbar */
     @media (max-width: 768px) {
