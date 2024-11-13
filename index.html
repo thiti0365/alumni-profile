@@ -46,6 +46,7 @@
       padding: 15px 20px;
       background-color: purple;
       color: white;
+      width: 100%; /* Ensures the navbar spans the full width */
     }
     
     .navbar img {
@@ -123,15 +124,17 @@
       background-color: #5e0f83;
     }
     
-    /* Footer styling (sticky at the bottom) */
+    /* Footer styling */
     .footer {
       background-color: purple;
       color: #f1f1f1;
       text-align: center;
       padding: 10px;
       font-size: 14px;
-      width: 100%;
-      margin-top: auto; /* Push footer to the bottom */
+      width: 100%; /* Full width */
+      position: relative; /* Ensures it stays at the bottom of the viewport */
+      bottom: 0; /* Stick to the bottom of the screen */
+      margin-top: auto; /* Push footer to the bottom if content is less */
     }
     
     /* Responsive font sizing for Navbar */
