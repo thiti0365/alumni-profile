@@ -6,144 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://quota.jc.tu.ac.th/images/jc_logo.png" type="image/png">
     <style>
-            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Noto Sans Thai", sans-serif;
-      }
-
-      a.icon-link:link {
-        color: #FFCC66; /* สีสำหรับลิงก์ปกติ */
-      }
-      
-      a.icon-link:visited {
-        color: #FFCC66; /* สีสำหรับลิงก์ที่เคยคลิกแล้ว */
-      }
-      
-      a.icon-link:hover {
-        color: #FF9966; /* สีเมื่อเอาเมาส์ไปวาง */
-      }
-      
-      a.icon-link:active {
-        color: #FF9900; /* สีเมื่อคลิกอยู่ */
-      }
-
-
-      /* Set up body to be a flex container and take up full viewport height */
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-
-      /* Navbar styling */
-      .navbar {
-        display: flex;
-        align-items: center;
-        padding: 15px 20px;
-        background-color: purple;
-        color: white;
-      }
-
-      .navbar img {
-        width: 50px;
-        height: 50px;
-        margin-right: 15px;
-      }
-
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Noto Sans Thai", sans-serif;
+    }
+    
+    a.icon-link:link {
+      color: #FFCC66; /* สีสำหรับลิงก์ปกติ */
+    }
+    
+    a.icon-link:visited {
+      color: #FFCC66; /* สีสำหรับลิงก์ที่เคยคลิกแล้ว */
+    }
+    
+    a.icon-link:hover {
+      color: #FF9966; /* สีเมื่อเอาเมาส์ไปวาง */
+    }
+    
+    a.icon-link:active {
+      color: #FF9900; /* สีเมื่อคลิกอยู่ */
+    }
+    
+    /* Set up body to be a flex container and take up full viewport height */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0; /* Remove default body margin */
+    }
+    
+    /* Navbar styling */
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: purple;
+      color: white;
+    }
+    
+    .navbar img {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+    
+    .navbar h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    /* Center container for the card */
+    .center-container {
+      flex: 1; /* Takes available space */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    /* Card styling */
+    .card {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+    
+    .card-header {
+      background-color: purple;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    
+    .card-body {
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: left;
+      line-height: 1.6;
+    }
+    
+    /* Styling for steps and horizontal rule */
+    .step {
+      margin: 20px 0;
+    }
+    
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+    
+    /* Button styling */
+    .button-link {
+      display: block;
+      background-color: purple;
+      color: white;
+      padding: 12px 0;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button-link:hover {
+      background-color: #5e0f83;
+    }
+    
+    /* Footer styling (sticky at the bottom) */
+    .footer {
+      background-color: purple;
+      color: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      width: 100%;
+      margin-top: auto; /* Push footer to the bottom */
+    }
+    
+    /* Responsive font sizing for Navbar */
+    @media (max-width: 768px) {
       .navbar h1 {
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 20px;
       }
-
-      /* Center container for the card */
-      .center-container {
-        flex: 1; /* Takes available space */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
+      .navbar img {
+        width: 40px;
+        height: 40px;
       }
-
-      /* Card styling */
-      .card {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        background-color: #fff;
-        margin-bottom: 20px;
-      }
-
-      .card-header {
-        background-color: purple;
-        color: white;
-        padding: 15px;
-        text-align: center;
-      }
-
-      .card-body {
-        padding: 20px;
-        background-color: #f9f9f9;
-        color: #333;
-        text-align: left;
-        line-height: 1.6;
-      }
-
-      /* Styling for steps and horizontal rule */
-      .step {
-        margin: 20px 0;
-      }
-
-      hr {
-        border: none;
-        border-top: 1px solid #ddd;
-        margin: 20px 0;
-      }
-
-      /* Button styling */
-      .button-link {
-        display: block;
-        background-color: purple;
-        color: white;
-        padding: 12px 0;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
-        transition: background-color 0.3s ease;
-      }
-
-      .button-link:hover {
-        background-color: #5e0f83;
-      }
-
-      /* Footer styling (sticky at the bottom) */
-      .footer {
-        background-color: purple;
-        color: #f1f1f1;
-        text-align: center;
-        padding: 10px;
-        font-size: 14px;
-        width: 100%;
-        margin-top: auto; /* Push footer to the bottom */
-      }
-
-      /* Responsive font sizing for Navbar */
-      @media (max-width: 768px) {
-        .navbar h1 {
-          font-size: 20px;
-        }
-        .navbar img {
-          width: 40px;
-          height: 40px;
-        }
-      }
+    }
     </style>
   </head>
   <body>
